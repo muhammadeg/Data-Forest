@@ -1,0 +1,28 @@
+﻿Build started 8/3/2023 2:34:07 AM.
+     1>Project "C:\Dataa\Data\Data.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DATA_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Data.cpp Memory.cpp
+         Memory.cpp
+     1>c:\dataa\data\interface.h(51): error C2027: use of undefined type 'type_info'
+                 c:\dataa\data\predefined c++ types (compiler internal)(127) : see declaration of 'type_info'
+                 c:\dataa\data\interface.h(51) : while compiling class template member function 'void Interface<IMemory>::Create(void)'
+                 c:\dataa\data\memory.cpp(7) : see reference to function template instantiation 'void Interface<IMemory>::Create(void)' being compiled
+                 c:\dataa\data\memory.cpp(7) : see reference to class template instantiation 'Interface<IMemory>' being compiled
+     1>c:\dataa\data\interface.h(51): error C2228: left of '.hash_code' must have class/struct/union
+         Data.cpp
+     1>c:\dataa\data\exports.h(5): error C2664: 'HMODULE LoadLibraryW(LPCWSTR)' : cannot convert argument 1 from 'const char [15]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\dataa\data\packet.h(439): error C2664: 'SQLRETURN SQLConnectW(SQLHDBC,SQLWCHAR *,SQLSMALLINT,SQLWCHAR *,SQLSMALLINT,SQLWCHAR *,SQLSMALLINT)' : cannot convert argument 2 from 'unsigned char *' to 'SQLWCHAR *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\dataa\data\packet.h(453): error C2664: 'SQLRETURN SQLExecDirectW(SQLHSTMT,SQLWCHAR *,SQLINTEGER)' : cannot convert argument 2 from 'unsigned char *' to 'SQLWCHAR *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\dataa\data\packet.h(499): error C2664: 'SQLRETURN SQLConnectW(SQLHDBC,SQLWCHAR *,SQLSMALLINT,SQLWCHAR *,SQLSMALLINT,SQLWCHAR *,SQLSMALLINT)' : cannot convert argument 2 from 'unsigned char *' to 'SQLWCHAR *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\dataa\data\packet.h(513): error C2664: 'SQLRETURN SQLExecDirectW(SQLHSTMT,SQLWCHAR *,SQLINTEGER)' : cannot convert argument 2 from 'unsigned char *' to 'SQLWCHAR *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         Generating Code...
+     1>Done Building Project "C:\Dataa\Data\Data.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.11
